@@ -1,0 +1,26 @@
+{
+  "name": "pp0018-supervision-v2-server",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "prepare:his-folders": "node scripts/prepare-his-folders.js",
+    "import:matriz-2027": "node scripts/import-matriz-2027.js",
+    "import:indicadores": "node scripts/import-indicadores-script.js",
+    "schema:postgres": "node scripts/apply-postgres-schema.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.23.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2"
+  }
+}
